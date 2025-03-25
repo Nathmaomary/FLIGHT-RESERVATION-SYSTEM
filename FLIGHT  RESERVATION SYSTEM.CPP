@@ -191,6 +191,10 @@ void handleFlightBookingError(int flightNumber, vector<Flight>& flights) {
         cout << "Error: Flight is either not available or fully booked." << endl;
     }
 }
+void modifyBooking(int flightNumber, vector<Flight>& flights) {
+    // Modify passenger information or change the flight
+}
+
 
 
 

@@ -74,6 +74,13 @@ void Reservation::displayReservationDetails() {
     flight.displayFlightDetails();
     passenger.displayPassengerDetails();
 }
+void displayAvailableFlights(const vector<Flight>& flights) {
+    for (const auto& flight : flights) {
+        flight.displayFlightDetails();
+        cout << "-----------------------------------" << endl;
+    }
+}
+
 
 
 

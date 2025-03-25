@@ -104,6 +104,37 @@ void cancelReservation(Flight& flight) {
     flight.availableSeats++;
     cout << "Reservation cancelled successfully. Seats have been restored." << endl;
 }
+void showMenu() {
+    cout << "1. Show Available Flights" << endl;
+    cout << "2. Book a Flight" << endl;
+    cout << "3. Cancel a Reservation" << endl;
+    cout << "4. Exit" << endl;
+}
+
+int main() {
+    vector<Flight> flights;
+    flights.push_back(Flight(101, "New York", "London", 50));
+    flights.push_back(Flight(102, "New York", "Paris", 30));
+
+    int choice;
+    while (true) {
+        showMenu();
+        cin >> choice;
+
+        if (choice == 1) {
+            displayAvailableFlights(flights);
+        } else if (choice == 2) {
+            // Booking logic goes here
+        } else if (choice == 3) {
+            // Cancel reservation logic goes here
+        } else if (choice == 4) {
+            break;
+        } else {
+            cout << "Invalid option!" << endl;
+        }
+    }
+    return 0;
+}
 
 
 

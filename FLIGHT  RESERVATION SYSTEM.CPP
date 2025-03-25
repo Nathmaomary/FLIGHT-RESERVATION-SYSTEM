@@ -81,6 +81,16 @@ void displayAvailableFlights(const vector<Flight>& flights) {
     }
 }
 
+Flight* searchFlight(int flightNumber, vector<Flight>& flights) {
+    for (auto& flight : flights) {
+        if (flight.flightNumber == flightNumber) {
+            return &flight;
+        }
+    }
+    return nullptr; // Flight not found
+}
+
+
 
 
 

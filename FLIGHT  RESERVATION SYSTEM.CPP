@@ -100,6 +100,11 @@ void bookFlight(Flight& flight, Passenger& passenger) {
         cout << "Sorry, no available seats on this flight!" << endl;
     }
 }
+void cancelReservation(Flight& flight) {
+    flight.availableSeats++;
+    cout << "Reservation cancelled successfully. Seats have been restored." << endl;
+}
+
 
 
 

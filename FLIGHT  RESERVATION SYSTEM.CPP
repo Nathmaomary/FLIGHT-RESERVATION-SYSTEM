@@ -65,5 +65,15 @@ void Passenger::displayPassengerDetails() {
     cout << "Age: " << age << endl;
     cout << "Passport Number: " << passportNumber << endl;
 }
+// Reservation.cpp
+#include "FlightReservationSystem.h"
+
+Reservation::Reservation(Flight f, Passenger p) : flight(f), passenger(p) {}
+
+void Reservation::displayReservationDetails() {
+    flight.displayFlightDetails();
+    passenger.displayPassengerDetails();
+}
+
 
 

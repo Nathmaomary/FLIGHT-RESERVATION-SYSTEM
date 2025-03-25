@@ -42,3 +42,16 @@ public:
 };
 
 #endif
+// Flight.cpp
+#include "FlightReservationSystem.h"
+
+Flight::Flight(int fNum, string orig, string dest, int seats)
+    : flightNumber(fNum), origin(orig), destination(dest), totalSeats(seats), availableSeats(seats) {}
+
+void Flight::displayFlightDetails() {
+    cout << "Flight Number: " << flightNumber << endl;
+    cout << "Origin: " << origin << endl;
+    cout << "Destination: " << destination << endl;
+    cout << "Total Seats: " << totalSeats << ", Available Seats: " << availableSeats << endl;
+}
+

@@ -166,6 +166,8 @@ void bookFlight(Flight& flight, Passenger& passenger) {
         cout << "Sorry, no available seats on this flight!" << endl;
     }
 }
+vector<Reservation> reservations; // This is already implemented in Commit 11
+
 
 
 

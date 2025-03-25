@@ -173,6 +173,16 @@ void displayAllFlights(const vector<Flight>& flights) {
     }
 }
 
+void displaySpecificFlightDetails(int flightNumber, vector<Flight>& flights) {
+    Flight* flight = searchFlight(flightNumber, flights);
+    if (flight) {
+        flight->displayFlightDetails();
+    } else {
+        cout << "Flight not found!" << endl;
+    }
+}
+
+
 
 
 

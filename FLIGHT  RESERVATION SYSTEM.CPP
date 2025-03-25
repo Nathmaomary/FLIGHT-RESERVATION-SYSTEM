@@ -90,6 +90,18 @@ Flight* searchFlight(int flightNumber, vector<Flight>& flights) {
     return nullptr; // Flight not found
 }
 
+void bookFlight(Flight& flight, Passenger& passenger) {
+    if (flight.availableSeats > 0) {
+        Reservation reservation(flight, passenger);
+        flight.availableSeats--;
+        cout << "Flight booked successfully!" << endl;
+        reservation.displayReservationDetails();
+    } else {
+        cout << "Sorry, no available seats on this flight!" << endl;
+    }
+}
+
+
 
 
 

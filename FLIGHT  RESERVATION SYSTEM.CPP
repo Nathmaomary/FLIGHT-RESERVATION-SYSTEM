@@ -181,6 +181,11 @@ void displaySpecificFlightDetails(int flightNumber, vector<Flight>& flights) {
         cout << "Flight not found!" << endl;
     }
 }
+void showReservationSummary(Reservation& reservation) {
+    cout << "Reservation Summary:" << endl;
+    reservation.displayReservationDetails();
+}
+
 
 
 

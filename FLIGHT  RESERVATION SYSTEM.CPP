@@ -54,4 +54,16 @@ void Flight::displayFlightDetails() {
     cout << "Destination: " << destination << endl;
     cout << "Total Seats: " << totalSeats << ", Available Seats: " << availableSeats << endl;
 }
+// Passenger.cpp
+#include "FlightReservationSystem.h"
+
+Passenger::Passenger(string n, int a, string pNum) 
+    : name(n), age(a), passportNumber(pNum) {}
+
+void Passenger::displayPassengerDetails() {
+    cout << "Passenger Name: " << name << endl;
+    cout << "Age: " << age << endl;
+    cout << "Passport Number: " << passportNumber << endl;
+}
+
 

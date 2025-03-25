@@ -185,6 +185,13 @@ void showReservationSummary(Reservation& reservation) {
     cout << "Reservation Summary:" << endl;
     reservation.displayReservationDetails();
 }
+void handleFlightBookingError(int flightNumber, vector<Flight>& flights) {
+    Flight* flight = searchFlight(flightNumber, flights);
+    if (!flight || flight->availableSeats == 0) {
+        cout << "Error: Flight is either not available or fully booked." << endl;
+    }
+}
+
 
 
 

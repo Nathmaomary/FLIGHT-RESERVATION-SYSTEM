@@ -207,6 +207,10 @@ void loadReservationsFromFile(vector<Reservation>& reservations) {
     // Load reservations from file
 }
 
+// Finalize the program with enhanced UI, handling edge cases
+cout << "Thank you for using the Flight Reservation System!" << endl;
+
+
 
 
 

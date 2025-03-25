@@ -167,6 +167,11 @@ void bookFlight(Flight& flight, Passenger& passenger) {
     }
 }
 vector<Reservation> reservations; // This is already implemented in Commit 11
+void displayAllFlights(const vector<Flight>& flights) {
+    for (const auto& flight : flights) {
+        flight.displayFlightDetails();
+    }
+}
 
 
 

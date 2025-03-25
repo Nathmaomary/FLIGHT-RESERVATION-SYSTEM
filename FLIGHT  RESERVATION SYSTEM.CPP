@@ -149,6 +149,25 @@ void showBookedReservations() {
     }
 }
 
+int getFlightSelection() {
+    int flightNumber;
+    cout << "Enter the flight number: ";
+    cin >> flightNumber;
+    return flightNumber;
+}
+
+void bookFlight(Flight& flight, Passenger& passenger) {
+    if (flight.availableSeats > 0) {
+        Reservation reservation(flight, passenger);
+        flight.availableSeats--;
+        reservations.push_back(reservation); // Store reservation
+        cout << "Flight booked successfully!" << endl;
+    } else {
+        cout << "Sorry, no available seats on this flight!" << endl;
+    }
+}
+
+
 
 
 

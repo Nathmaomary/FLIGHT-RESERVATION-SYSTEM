@@ -136,6 +136,20 @@ int main() {
     return 0;
 }
 
+vector<Reservation> reservations;
+
+void showBookedReservations() {
+    if (reservations.empty()) {
+        cout << "No reservations yet!" << endl;
+        return;
+    }
+    for (const auto& reservation : reservations) {
+        reservation.displayReservationDetails();
+        cout << "-----------------------------------" << endl;
+    }
+}
+
+
 
 
 

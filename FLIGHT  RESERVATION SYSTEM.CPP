@@ -195,6 +195,19 @@ void modifyBooking(int flightNumber, vector<Flight>& flights) {
     // Modify passenger information or change the flight
 }
 
+#include <fstream>
+
+void saveReservationsToFile(const vector<Reservation>& reservations) {
+    ofstream outFile("reservations.txt");
+    // Save reservations to file
+}
+
+void loadReservationsFromFile(vector<Reservation>& reservations) {
+    ifstream inFile("reservations.txt");
+    // Load reservations from file
+}
+
+
 
 
 
